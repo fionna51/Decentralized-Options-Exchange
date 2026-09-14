@@ -6,3 +6,6 @@
 - `src/retry.py`: Jittered exponential backoff policies.
 - `src/validator.py`: Input validation and slug sanitization.
 - `src/metrics.py`: Lightweight counters and latency histograms.
+
+### Retry Strategy
+Prefer bounded exponential backoff with full jitter to avoid synchronized worker spikes during upstream degradation.
