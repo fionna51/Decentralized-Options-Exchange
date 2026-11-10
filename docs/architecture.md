@@ -9,3 +9,6 @@
 
 ### Retry Strategy
 Prefer bounded exponential backoff with full jitter to avoid synchronized worker spikes during upstream degradation.
+
+### Logging Conventions
+Emit UTC ISO-8601 timestamps with flat `key=value` context fields for easy log parsing.
